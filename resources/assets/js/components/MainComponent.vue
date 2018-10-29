@@ -6,7 +6,7 @@
                     <div class="panel-heading">Example Component</div>
 
                     <div class="panel-body">
-                        MainComponent!!!
+                        MainComponent!!! {{ msg }}
                     </div>
                 </div>
             </div>
@@ -16,6 +16,11 @@
 
 <script>
     export default {
+		data() {
+			return {
+				msg: 'msgmsgmsgmsgmsg'
+			}
+		},
         mounted() {
             console.log('MainComponent.')
         }
